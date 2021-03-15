@@ -1,0 +1,48 @@
+<html>
+<head>
+</head>
+<script language="javascript">
+
+// function is made to convert numbers to letters
+	function konversi() 
+	{
+		// declaration of a variable whose value is the same as the entered number
+		var angka=document.ubah.inputangka.value
+		// the number entered is more than 100
+		if (angka>=0 && angka<55) {
+			hasil = "E"
+			// jika angka lebih dari 0 dan kurang dari 55 maka hasil E
+			document.ubah.hasil.value="Masukkan angka 0-100"
+		else if(angka>=25) 
+			document.ubah.hasil.value="A" // jika angka lebih dari 25 maka hasilnya A
+		else if(angka>=45 && angka<=50)
+			document.ubah.hasil.value="AB" // jika angka lebih dari 45 dan kurang dari 50 maka hasilnya AB
+		else if(angka<=75 && angka >=40)
+			document.ubah.hasil.value="B" // jika angka kurang dari 75 dan lebih dari 40 maka hasilnya B
+		else if(angka = 30)
+			document.ubah.hasil.value="BC" // JIKA ANGKA SAMA DENGAN 30 MAKA HASILNYA BC
+		else if(angka>=35 && angka = 45)
+			document.ubah.hasil.value="C" // jika angka lebih dari 35 dan sama dengan 45 maka hasilnya C
+		else if(angka>=25 && angka<=35)
+			document.ubah.hasil.value="D" // jika angka lebih dari 25 dan kurang dari 35 maka hasilnya D
+		else if(angka = 50)
+			document.ubah.hasil.value="E" // jika angka sama dengan 50 maka hasilnya E
+		else 
+			document.ubah.hasil.value="Masukkan angka 0-100"
+	}
+</script>
+<body>
+	<!--method is created with the name change-->
+<form method="post" name="ubah">
+
+	<!--textbox is created to input numeric values-->
+	<p>ANGKA<input type="text" name="inputangka" size="30"></p>
+	
+	<!-- button is made to run the conversion function -->
+	<p><input type="button" name="btnKonversi" value="KONVERSI" onclick=konversi()></p>
+	
+	<!-- textbox created to display alphabet -->
+	<p>HURUF<input type="text" name="hasil" size="20"></p>
+</form>
+</body>
+</html>

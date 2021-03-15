@@ -1,0 +1,100 @@
+<html>
+<head>
+		<title> Mendeklarasikan variabel angka oleh user
+		<style type="text/css"></style>
+		.tabel{  
+}
+
+	//mmake class with type text/css
+	//function for division
+
+	<script language="javascript">
+	function Bagi () 
+	{
+		// deklarasi variabel angka ke 1 yang dimasukkan user
+		var angka1=parseFloat(document.hitung.bil1.value)
+		
+		//deklarasi variabel angka ke 2 yang dimasukkan user
+		var angka2=parseFloat(document.hitung.bil2.value)
+
+		//hasil division
+		document.hitung.hasil.value=angka1/angka2
+	}
+
+	//function untuk multiplication
+	function Kali () 
+	{
+		//deklarasi variabel angka ke-1 yang dimasukkan user
+		var angka1=parseFloat(document.hitung.bil1.value)
+		
+		//deklarasi variabel angka ke-2 yang dimasukkan user
+		var angka2=parseFloat(document.hitung.bil2.value)
+
+		//hasil multiplication
+		document.hitung.hasil.value=angka1*angka2
+	}
+
+	//make function for addition
+	function Jumlah () 
+	{
+		//deklarasi variabel angka ke-1 yang dimasukkan user
+		var angka1=parseFloat(document.hitung.bil1.value)
+		
+		//deklarasi variabel angka ke-2 yang dimasukkan user
+		var angka2=parseFloat(document.hitung.bil2.value)
+
+		//hasil addition
+		document.hitung.hasil.value=angka1+angka2
+	}
+
+	//make function for subtraction
+	function Kurang() 
+	{
+		//deklarasi variabel angka ke-1 yang dimasukkan user
+		var angka1=parseFloat(document.hitung.bil1.value)
+		
+		//deklarasi variabel angka ke-2 yang dimasukkan user
+		var angka2=parseFloat(document.hitung.bil2.value)
+
+		//hasil subtraction
+		document.hitung.hasil.value=angka1-angka2
+	}
+</script>
+<body>
+	<form name="calculator"> 
+<!-- method dibuat dengan nama hitung -->
+<table style="background-color: " class="table" align="center"
+<!-- make a table-->
+
+<form method="post" name="hitung">
+
+	<!-- textbbox dibuat untuk menginput nilai angka ke-1 -->
+	<p>Bil 1<input type="text" name="bil1" size="30"></p>
+	
+	<!-- textbox dibuat untuk menginput nilai angka ke-2 -->
+	<p>Bil 2<input type="text" name="bil2" size="30"></p>
+
+	<!-- button for division --> 
+	<p><input type="button" name="btnbagi" value="/" onclick=bagi() style="float:left; margin-left:1%"></p>
+	
+	<!-- button for multiplication --> 
+	<p><input type="button" name="btnKali" value="*" onclick=kali() style="float:left; margin-left:1%"></p>
+	
+	<!-- button for addition --> 
+	<p><input type="button" name="btnJumlah" value="+" onclick=Jumlah() style="float:left; margin-left:1%"></p>
+	
+	<!-- button untuk substraction --> 
+	<p><input type="button" name="btnKurang" value="-" onclick=kurang() style="float:left; margin-left:1%"></p>
+	
+	<br>
+	<br>
+	<!-- textbox dibuat untuk menampilkan hasil akhir -->
+	<p>HASIL<input type="text" name="hasil" size="30"></p>
+	
+	<script language="javascript">
+		document.write("Update Terakhir pada "+document.lastModified);
+	</script>
+</form>
+</body>
+</table>
+</html>

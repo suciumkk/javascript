@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<script language="javascript">
+
+function test () {
+var val1=document.kirim. T1. value // create a variable val1 which stores the value of document.send.T1.value
+if (val1%2==0) // if val1 modulus 2 then has a value equal to 0
+
+document.kirim.T2. value="bilangan genap" // the value of document.send.T2.value is an even number
+else // if not
+document.kirim.T2. value="bilangan ganjil" // the value of document.T2.value is an odd number
+
+}
+</script>
+<body>
+
+<form method="POST" name="kirim"> <!-- create a form with post method and submit name -->
+
+<p>BIL <input type="text" name="T1" size="20" >is a Bil<input type="text" name="T2" size="20"> </p> // <!-- makes paragraph BIL with input type text and makes writing is bil with text input -->
+
+<p><input type="button" value="TEBAK" name="B1" onclick=test ()> <!-- create a paragraph and input type button with the name B1 and when clicked will call the test function -->
+
+</form>
+</body>
+</html>
